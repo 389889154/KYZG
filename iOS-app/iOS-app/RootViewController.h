@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RootViewController.h
 //  iOS-app
 //
 //  Created by wey on 16/1/9.
@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import <RESideMenu.h>
+@interface RootViewController : RESideMenu
 
 @end
-

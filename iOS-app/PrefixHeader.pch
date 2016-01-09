@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  iOS-app
+//
+//  Created by wey on 16/1/9.
+//  Copyright © 2016年 wey. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#define kWeakSelf(weakSelf) __weak typeof(self)weakSelf = self;
+
+//
+#define kPlaceHolder [UIImage imageNamed:@"placeHolder.png"]
+
+
+#endif /* PrefixHeader_pch */
