@@ -16,6 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+}
+
+- (void)addChildViewController:(UIViewController *)childController title:(NSString *)title selectImg:(NSString *)selectImg img:(NSString *)img{
+    
+    UINavigationController *nvc = [[UINavigationController alloc]initWithRootViewController:childController];
+    childController.title = title;
+    childController.tabBarItem = [[UITabBarItem alloc]initWithTitle:title image:[UIImage imageNamed:img] selectedImage:[UIImage imageNamed:img]];
+    [self addChildViewController:nvc];
+    
 }
 
 - (void)didReceiveMemoryWarning {

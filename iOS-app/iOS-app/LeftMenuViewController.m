@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.tableView.rowHeight = 60; 
     _items = @[@"item1",@"item2",@"item3",@"item4",@"item5",@"夜间模式"];
     _icons = @[kPlaceHolder,kPlaceHolder,kPlaceHolder,kPlaceHolder,kPlaceHolder,kPlaceHolder];
     
@@ -41,6 +41,11 @@
     cell.textLabel.text = _items[indexPath.row];
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+
+    return 120.f;
 }
 
 @end
